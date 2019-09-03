@@ -8,20 +8,15 @@ import Company from "./company"
 class CompanyCard extends Component {
   componentDidMount(){
     const id = this.props.location.pathname.split('/')[2]
-    this.props.fetchCompany(id) //get data
+    this.props.fetchCompany(id)
   };
   
   render(){
-    // const { fetching, company, error } = this.props
     const { company } = this.props
     
     if(!company){
       return <p>Loading...</p>
     }
-
-    // if (error){
-    //  return <p style={{ color: "red" }}>Sorry, something went wrong!</p>
-    // }
 
     const editUrl = `/company/edit/${company.id}`
     return(
@@ -37,8 +32,6 @@ class CompanyCard extends Component {
 
 const mapStateToProps = state => {
   return {
-    // fetching: state.companiesReducer.fetching,
-    // error: state.companiesReducer.error,
     company: state.companiesReducer.company
   };
 };
