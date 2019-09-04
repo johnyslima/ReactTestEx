@@ -4,7 +4,7 @@ import App from "./containers/App";
 import registerServiceWorker from "./registerServiceWorker";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { createStore, applyMiddleware, combineReducers } from "redux";
+import { createStore, applyMiddleware } from "redux";
 import createSagaMiddleware from "redux-saga";
 import { Provider } from "react-redux";
 import rootReducer from './reducers/reducer';

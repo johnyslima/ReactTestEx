@@ -24,7 +24,7 @@ class App extends Component {
                     </section>
                 </div>
                 </Router>
-                {this.props.children}
+                {/* {this.props.children} */}
             </div>
         </div>
       </div>

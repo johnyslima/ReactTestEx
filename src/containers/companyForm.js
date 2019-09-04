@@ -29,9 +29,11 @@ class CompanyForm extends Component{
             <option value="ИП">ИП</option>
           </Field>
         </div>
+        <div className='form-group'>
         <div className='form-check'>
           <Field name="active" component="input" type="checkbox" className="form-check-input"/>
-          <label htmlFor="active" className="form-check-label">Активна:</label>
+          <label htmlFor="active" className="form-check-label">Активна</label>
+          </div>
         </div>
         <div className='form-group'>
           <label htmlFor="ogrn">ОГРН:</label>
